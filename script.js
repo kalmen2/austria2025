@@ -1,5 +1,5 @@
 // Countdown Timer
-const targetDate = new Date("2025-02-02T06:30:00").getTime();
+const targetDate = new Date("2025-08-02T06:30:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
@@ -30,7 +30,7 @@ function updateCurrentTime() {
 
 // Weather API
 const apiKey = '2c76b6a03e2bd1547e50494010ebea93';
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Phoenix,AZ,US&appid=${apiKey}&units=imperial`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Munich,de&appid=${apiKey}&units=imperial`;
 
 function getWeather() {
     fetch(apiUrl)
@@ -48,7 +48,7 @@ function getWeather() {
 }
 
 // Zmanim API
-const hebcalApiUrl = `https://www.hebcal.com/zmanim?cfg=json&latitude=33.4484&longitude=-112.0740`;
+const hebcalApiUrl = `https://www.hebcal.com/zmanim?cfg=json&latitude=48.1351&longitude=11.5820`;
 
 async function fetchZmanim() {
     try {
